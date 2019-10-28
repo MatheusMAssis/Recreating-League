@@ -16,6 +16,6 @@ public class CharacterDisplay : MonoBehaviour
         characterName.GetComponent<TextMeshProUGUI>().text = character.characterName;
         characterImage.GetComponent<Image>().sprite = character.characterImage;
 
-        characterImage.transform.position = new Vector2(characterImage.transform.position.x + character.horizontalOffset, characterImage.transform.position.y + character.verticalOffset);
+        characterImage.transform.localPosition = new Vector2(characterImage.transform.localPosition.x + character.horizontalOffset, characterImage.transform.localPosition.y + character.verticalOffset);
     }
 }
