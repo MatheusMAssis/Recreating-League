@@ -11,16 +11,6 @@ public class ImageBehindScript : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    public void PlayAnimation()
-    {
-        anim.SetBool("Stop", false);
-    }
-
-    public void StopAnimation()
-    {
-        anim.SetBool("Stop", true);
-    }
-
     void Update()
     {
         
