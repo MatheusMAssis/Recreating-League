@@ -9,7 +9,7 @@ public class TimerCountdown : MonoBehaviour
     public int timerMax;
 
     TextMeshProUGUI textMeshComponent;
-    float countdown;
+    public float countdown;
 
     void Start()
     {
