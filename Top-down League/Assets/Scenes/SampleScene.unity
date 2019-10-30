@@ -247,37 +247,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+      objectReference: {fileID: 11400000, guid: 39d9487290b4e4e4b8943c81208d6847,
         type: 2}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2964050979668040952, guid: 39d9487290b4e4e4b8943c81208d6847,
+        type: 2}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d959012d3f497418871bb527bf4f4f, type: 3}
@@ -1648,6 +1649,31 @@ PrefabInstance:
       propertyPath: characterName
       value: 
       objectReference: {fileID: 1549068048}
+    - target: {fileID: 6093917853583294580, guid: 0d3016369fc55eb4fa431949ebc00a13,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093917853583294580, guid: 0d3016369fc55eb4fa431949ebc00a13,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093917853583294580, guid: 0d3016369fc55eb4fa431949ebc00a13,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093917853583294580, guid: 0d3016369fc55eb4fa431949ebc00a13,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093917853583294580, guid: 0d3016369fc55eb4fa431949ebc00a13,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3016369fc55eb4fa431949ebc00a13, type: 3}
 --- !u!1 &813276537
@@ -1810,7 +1836,7 @@ GameObject:
   - component: {fileID: 862386030}
   m_Layer: 5
   m_Name: Timer
-  m_TagString: Untagged
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3285,37 +3311,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+      objectReference: {fileID: 11400000, guid: 39d9487290b4e4e4b8943c81208d6847,
         type: 2}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 2964050979668040952, guid: 39d9487290b4e4e4b8943c81208d6847,
+        type: 2}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784163644218742431, guid: 57d959012d3f497418871bb527bf4f4f,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d959012d3f497418871bb527bf4f4f, type: 3}

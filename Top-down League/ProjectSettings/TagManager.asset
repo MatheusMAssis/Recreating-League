@@ -8,6 +8,7 @@ TagManager:
   - CharacterClickable
   - ImageBehind
   - CharacterName
+  - Timer
   layers:
   - Default
   - TransparentFX

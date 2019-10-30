@@ -12,6 +12,7 @@ public class CharacterSelectScript : MonoBehaviour
     public Image smallImage;
     public TextMeshProUGUI championName;
     public TextMeshProUGUI characterName;
+    public TextMeshProUGUI timeText;
 
     private Button[] buttonsFinal;
     private List<Button> buttons = new List<Button>();
@@ -24,6 +25,7 @@ public class CharacterSelectScript : MonoBehaviour
     {
         characters = GameObject.FindGameObjectsWithTag("CharacterClickable");
         characterName = characterName.GetComponent<TextMeshProUGUI>();
+        timeText = timeText.GetComponent<TextMeshProUGUI>();
 
         foreach (GameObject character in characters)
         {
@@ -37,6 +39,8 @@ public class CharacterSelectScript : MonoBehaviour
 
     void Update()
     {
+        timeText.text = GameObject.FindGameObjectWithTag("Timer").GetComponent<TextMeshProUGUI>().text;
+
         foreach (Button button in buttons)
         {
             if (button.interactable == false) {
@@ -48,11 +52,12 @@ public class CharacterSelectScript : MonoBehaviour
 
                 smallImage.GetComponent<Image>().sprite = selectedCharacter;
                 imageBehindObj.GetComponent<Image>().sprite = selectedCharacter;
-
+  
                 characterName.text = selectedName;
                 if (characterName.gameObject.activeInHierarchy)
                 {
                     championName.text = selectedName;
+                    timeText.gameObject.SetActive(false);
                 }
                 else
                 {
