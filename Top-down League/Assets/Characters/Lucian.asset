@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lucian
   m_EditorClassIdentifier: 
   characterName: Lucian
-  characterImage: {fileID: 21300000, guid: 80213467c1f431b46b902607fedcc95c, type: 3}
-  horizontalOffset: -87
-  verticalOffset: -45
+  characterImage: {fileID: 21300000, guid: 79262e4d9dc2a284d800c3dcf14a0963, type: 3}
+  horizontalOffset: 10
+  verticalOffset: -58

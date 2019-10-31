@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Miss Fortune
   m_EditorClassIdentifier: 
   characterName: Miss Fortune
-  characterImage: {fileID: 21300000, guid: d664750a16c67344ea885b1943cbbfae, type: 3}
-  horizontalOffset: -147
-  verticalOffset: -51
+  characterImage: {fileID: 21300000, guid: 04cb3665c5dad024b9d623f260f32d46, type: 3}
+  horizontalOffset: -33
+  verticalOffset: -117

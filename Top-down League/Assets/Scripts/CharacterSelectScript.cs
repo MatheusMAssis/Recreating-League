@@ -10,8 +10,10 @@ public class CharacterSelectScript : MonoBehaviour
     GameObject imageBehindObj;
 
     public Image smallImage;
+    public ParticleSystem effect;
     public TextMeshProUGUI championName;
     public TextMeshProUGUI characterName;
+    public TextMeshProUGUI characterName2;
     public TextMeshProUGUI timeText;
 
     private Button[] buttonsFinal;
@@ -47,15 +49,17 @@ public class CharacterSelectScript : MonoBehaviour
                 Sprite selectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.characterImage;
                 string selectedName      = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.characterName;
 
-                horizontalOffsetSelectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.horizontalOffset;
-                verticalOffsetSelectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.verticalOffset;
+                horizontalOffsetSelectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.horizontalOffset / 2;
+                verticalOffsetSelectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.verticalOffset / 2;
 
                 smallImage.GetComponent<Image>().sprite = selectedCharacter;
                 imageBehindObj.GetComponent<Image>().sprite = selectedCharacter;
   
                 characterName.text = selectedName;
+                characterName2.text = selectedName;
                 if (characterName.gameObject.activeInHierarchy)
                 {
+                    effect.gameObject.SetActive(false);
                     championName.text = selectedName;
                     timeText.gameObject.SetActive(false);
                 }

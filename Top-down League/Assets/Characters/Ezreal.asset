@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ezreal
   m_EditorClassIdentifier: 
   characterName: Ezreal
-  characterImage: {fileID: 21300000, guid: 3e76410ff596c7a4bb9c94d654c7324f, type: 3}
-  horizontalOffset: -81
-  verticalOffset: -69
+  characterImage: {fileID: 21300000, guid: 0c6d812c3dac4a1469496bae3b83fd09, type: 3}
+  horizontalOffset: 0
+  verticalOffset: -132

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Kaisa
   m_EditorClassIdentifier: 
   characterName: Kaisa
-  characterImage: {fileID: 21300000, guid: df835fa92a67de8469c1dfa87cb894b2, type: 3}
-  horizontalOffset: 9
-  verticalOffset: -93
+  characterImage: {fileID: 21300000, guid: 0c3bea82f4b658543a1f7e90d2747100, type: 3}
+  horizontalOffset: -21
+  verticalOffset: -189
