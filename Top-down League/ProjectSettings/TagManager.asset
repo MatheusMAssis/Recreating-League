@@ -9,6 +9,7 @@ TagManager:
   - ImageBehind
   - CharacterName
   - Timer
+  - ConfirmButton
   layers:
   - Default
   - TransparentFX

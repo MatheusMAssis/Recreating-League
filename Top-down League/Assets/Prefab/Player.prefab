@@ -5156,6 +5156,8 @@ MonoBehaviour:
   characterName: {fileID: 0}
   characterName2: {fileID: 0}
   timeText: {fileID: 6093917853583294580}
+  selectImage: {fileID: 4065868150667342450}
+  squareImage: {fileID: 1549844390510790681}
 --- !u!1 &5946163738574947270
 GameObject:
   m_ObjectHideFlags: 0

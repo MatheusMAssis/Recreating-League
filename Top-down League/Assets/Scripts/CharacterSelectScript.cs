@@ -15,10 +15,13 @@ public class CharacterSelectScript : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI characterName2;
     public TextMeshProUGUI timeText;
+    public Image selectImage;
+    public Image squareImage;
 
     private Button[] buttonsFinal;
     private List<Button> buttons = new List<Button>();
     private GameObject[] characters;
+    private Button confirmButton;
 
     float horizontalOffsetSelectedCharacter = 0f;
     float verticalOffsetSelectedCharacter = 0f;
@@ -37,6 +40,9 @@ public class CharacterSelectScript : MonoBehaviour
         buttonsFinal = buttons.ToArray();
 
         imageBehindObj = GameObject.FindGameObjectWithTag("ImageBehind");
+
+        confirmButton = GameObject.FindGameObjectWithTag("ConfirmButton").GetComponent<Button>();
+        confirmButton.interactable = false;
     }
 
     void Update()
@@ -46,6 +52,8 @@ public class CharacterSelectScript : MonoBehaviour
         foreach (Button button in buttons)
         {
             if (button.interactable == false) {
+                confirmButton.interactable = true;
+
                 Sprite selectedCharacter = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.characterImage;
                 string selectedName      = characters[System.Array.IndexOf(buttonsFinal, button)].GetComponent<CharacterDisplay>().character.characterName;
 
@@ -57,8 +65,14 @@ public class CharacterSelectScript : MonoBehaviour
   
                 characterName.text = selectedName;
                 characterName2.text = selectedName;
+
                 if (characterName.gameObject.activeInHierarchy)
                 {
+                    selectImage.gameObject.SetActive(false);
+
+                    Color aux = squareImage.GetComponent<Image>().color;
+                    squareImage.GetComponent<Image>().color = new Color(aux.r, aux.g, aux.b, .05f);
+
                     effect.gameObject.SetActive(false);
                     championName.text = selectedName;
                     timeText.gameObject.SetActive(false);
