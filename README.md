@@ -1,4 +1,4 @@
-# Recreating-League
+# Recreating League
 Repository created as an individual project to recreate and adapt League of Legends to a 2D Top-down view game. All of its creation is being recorded and will be posted afterwards.
 
 ## Getting Started
