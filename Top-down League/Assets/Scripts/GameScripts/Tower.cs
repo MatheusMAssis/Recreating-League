@@ -5,6 +5,9 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     public GameObject target;
+    public GameObject bullet;
+
+    private bool firing = false;
 
     void Start()
     {
@@ -19,7 +22,21 @@ public class Tower : MonoBehaviour
             {
                 target = collision.gameObject;
             }
+
+            if (target != null && !firing)
+            {
+                Debug.Log("here");
+                firing = true;
+                StartCoroutine(shoot());
+            }
         }
+    }
+
+    IEnumerator shoot()
+    {
+        yield return new WaitForSeconds(1);
+        Instantiate(bullet, transform.position, Quaternion.identity);
+        firing = false;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
