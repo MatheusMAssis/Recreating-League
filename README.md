@@ -16,7 +16,7 @@ Unity 2019.2.9f
 ## Authors
 
 **Solo Project**
-* Matheus Assis.
+* Matheus Assis
 
 ## License
 
